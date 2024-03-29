@@ -1,0 +1,17 @@
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.csproj.AssemblyReference.cache
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.AssemblyInfoInputs.cache
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.AssemblyInfo.cs
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.csproj.CoreCompileInputs.cache
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Servicies.deps.json
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Servicies.dll
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Servicies.pdb
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Data.dll
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Entities.dll
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Data.pdb
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\bin\Debug\net8.0\Entities.pdb
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.csproj.CopyComplete
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.dll
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\refint\Servicies.dll
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\Servicies.pdb
+C:\Users\mxmae\OneDrive\Escritorio\Syncro\Servicies\obj\Debug\net8.0\ref\Servicies.dll

@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/lib/js-sha256/build/sha256.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btnSincronizar").click(function() {
+                var tipoSincronizacion = $(this).data("tipo");
+                var solicitud = {
+                    TipoSincronizacion: tipoSincronizacion,
+                    Usuario: $("#usuario").val(),
+                    Contrasena: sha256($("#contrasena").val())
+                };
+                console.log($("#usuario").val());
+                console.log(sha256($("#contrasena").val()));
+                console.log(tipoSincronizacion);
+
+                $.ajax({
+                    url: '/Sincronizacion/Sincronizar', // Asegúrate de que coincida con la ruta del controlador
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(solicitud),
+                    success: function (response) {
+                        alert("Respuesta: " + response);
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Error: " + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form id="formularioSincronizacion">
+        <label for="tipoSincronizacion">Tipo de Sincronización:</label>
+        <input type="text" id="tipoSincronizacion" name="tipoSincronizacion" required>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button type="button" class="btnSincronizar" data-tipo="pedidos">Sincronizar Pedidos</button>
+        <button type="button" class="btnSincronizar" data-tipo="artículos">Sincronizar Artículos</button>
+        <button type="button" class="btnSincronizar" data-tipo="precios">Sincronizar Precios</button>
+        <button type="button" class="btnSincronizar" data-tipo="stock">Sincronizar Stock</button>
+
+        <button type="button" id="btnSincronizar">Sincronizar</button>
+    </form>
+</div>
